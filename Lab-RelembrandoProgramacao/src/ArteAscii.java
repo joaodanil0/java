@@ -1,11 +1,9 @@
+import java.util.Scanner;
+
 public class ArteAscii{
 	public static void main(String[] args){
-		
-		if(args.length == 0) return;
-
-		int quantidade = Integer.valueOf(args[0]);
-		
-		if (quantidade < 1) return;
+		Scanner scanner = new Scanner(System.in);
+		int quantidade = scanner.nextInt(); 
 
 		for(int i = quantidade; i > 0; i--){
 			for(int j = 0; j < i; j++){
